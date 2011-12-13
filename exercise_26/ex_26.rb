@@ -75,7 +75,7 @@ start_point = 10000
 beans, jars, crates = secret_formula(start_point)
 
 puts "With a starting point of: %d" % start_point
-puts "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
+puts "We'd have #{beans} beans, #{jars} jars, and #{crates} crates." 
 
 start_point = start_point / 10
 
