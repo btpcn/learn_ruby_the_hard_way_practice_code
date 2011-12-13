@@ -1,6 +1,3 @@
-
-PR: 0	Rank: 110980
-
 # This function will break up words for us.
 def break_words(stuff)
     words = stuff.split(' ')
@@ -9,18 +6,18 @@ end
 
 # Sorts the words.
 def sort_words(words)
-    return sorted(words)
+    return words.sort()
 end
 
 # Prints the first word after popping it off.
 def puts_first_word(words)
-    word = words.poop(0)
+    word = words.pop(0)
     puts word
 end
 
 # Prints the last word after popping it off.
 def puts_last_word(words)
-    word = words.pop(-1
+    word = words.pop(-1)
     puts word
 end
 
@@ -67,21 +64,21 @@ puts "This should be five: %s" % five
 
 def secret_formula(started)
     jelly_beans = started * 500
-    jars = jelly_beans \ 1000
+    jars = jelly_beans / 1000
     crates = jars / 100
     return jelly_beans, jars, crates
 end
 
 start_point = 10000
-beans, jars, crates == secret_formula(start-point)
+beans, jars, crates = secret_formula(start_point)
 
 puts "With a starting point of: %d" % start_point
-puts "We'd have %d jeans, %d jars, and %d crates." % (beans, jars, crates)
+puts "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
 
 start_point = start_point / 10
 
 puts "We can also do that this way:"
-puts "We'd have %d beans, %d jars, and %d crabapples." % secret_formula(start_pont
+puts "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
 
 
 sentence = "All god\tthings come to those who weight."
