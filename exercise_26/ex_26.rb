@@ -12,13 +12,13 @@ end
 
 # Prints the first word after popping it off.
 def puts_first_word(words)
-    word = words.pop(0)
+    word = words.shift()
     puts word
 end
 
 # Prints the last word after popping it off.
 def puts_last_word(words)
-    word = words.pop(-1)
+    word = words.pop()
     puts word
 end
 
@@ -45,7 +45,7 @@ end
 
 
 puts "Let's practice everything."
-puts 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
+puts "You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs."
 
 poem = <<POEM
 \tThe lovely world
@@ -61,7 +61,7 @@ puts "--------------"
 puts poem
 puts "--------------"
 
-five = 10 - 2 + 3 - 5
+five = 10 - 2 + 3 - 5 - 1
 puts "This should be five: %s" % five
 
 def secret_formula(started)
@@ -93,7 +93,7 @@ puts_last_word(words)
 puts_first_word(sorted_words)
 puts_last_word(sorted_words)
 sorted_words = sort_sentence(sentence)
-print sorted_words
+print sorted_words + "\n"
 
 puts_first_and_last(sentence)
 
